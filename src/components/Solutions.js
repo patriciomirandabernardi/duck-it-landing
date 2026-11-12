@@ -35,15 +35,15 @@ const solutions = [
   },
   {
     icon: "medical",
-    tag: "Salud",
-    title: "Sistema de Gestión Médica (Consultorios)",
+    tag: "Gestión",
+    title: "Sistema de Gestión para Consultorios",
     text: "Digitalización completa para profesionales de la salud.",
     features: [
       "Historiales clínicos digitales centralizados",
       "Base de datos de pacientes con buscador optimizado",
       "Arquitectura segura y escalable",
     ],
-    demo: demoUrl("Gestión Médica para Consultorios"),
+    demo: demoUrl("Gestión para Consultorios"),
   },
   {
     icon: "globe",
@@ -63,9 +63,9 @@ export default function Solutions() {
     <section id="soluciones" className="scroll-mt-16 bg-white py-20 sm:py-28">
       <Container>
         <SectionHeading
-          eyebrow="Sistemas Core"
-          title="Soluciones implementadas: Casos de éxito reales"
-          text="Sistemas desarrollados a medida que ya están optimizando la operativa diaria de empresas y profesionales. Nos adaptamos a tu lógica de trabajo."
+          eyebrow="Sistemas Duck IT"
+          title="Soluciones implementadas: Casos de éxito reales."
+          text="Nos adaptamos a tu lógica de trabajo con nuestros sistemas desarrollados a medida que ya están optimizando la operativa diaria de empresas y profesionales."
         />
 
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
