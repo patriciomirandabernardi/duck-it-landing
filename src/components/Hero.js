@@ -61,7 +61,7 @@ export default function Hero() {
               href="#soluciones"
               className="inline-flex items-center justify-center rounded-lg border border-ink/80 px-6 py-3.5 text-sm font-semibold text-ink transition hover:border-accent-600 hover:text-accent-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
             >
-              Ver Sistemas Core
+              Ver Casos de Éxito
             </a>
           </div>
         </div>

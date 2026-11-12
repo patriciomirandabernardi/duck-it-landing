@@ -30,6 +30,18 @@ const paths = {
       <path d="m3 8 9 5 9-5M12 13v8" />
     </>
   ),
+  medical: (
+    <>
+      <rect x="4" y="4" width="16" height="16" rx="3" />
+      <path d="M12 8v8M8 12h8" />
+    </>
+  ),
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z" />
+    </>
+  ),
   check: <path d="m5 12 5 5L20 7" />,
   arrow: <path d="M5 12h14M13 6l6 6-6 6" />,
   pin: (

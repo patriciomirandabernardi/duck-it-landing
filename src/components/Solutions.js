@@ -1,6 +1,13 @@
 import Icon from "./Icon";
 import { Container, SectionHeading } from "./Section";
 
+const WHATSAPP_NUMBER = "5493471629178";
+
+const demoUrl = (system) =>
+  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    `Hola, quisiera solicitar una demo del sistema de ${system}`
+  )}`;
+
 const solutions = [
   {
     icon: "truck",
@@ -12,6 +19,7 @@ const solutions = [
       "Historial de correctivos por unidad: falla, repuestos, taller y costo",
       "Días fuera de servicio y costo por unidad, medidos y no estimados",
     ],
+    demo: demoUrl("Gestión de Flotas y Correctivos"),
   },
   {
     icon: "box",
@@ -23,6 +31,30 @@ const solutions = [
       "Compras y precios de todos los proveedores en un solo lugar",
       "Gasto por área y por período, sin cruzar planillas a mano",
     ],
+    demo: demoUrl("Control de Stock y Compras"),
+  },
+  {
+    icon: "medical",
+    tag: "Salud",
+    title: "Sistema de Gestión Médica (Consultorios)",
+    text: "Digitalización completa para profesionales de la salud.",
+    features: [
+      "Historiales clínicos digitales centralizados",
+      "Base de datos de pacientes con buscador optimizado",
+      "Arquitectura segura y escalable",
+    ],
+    demo: demoUrl("Gestión Médica para Consultorios"),
+  },
+  {
+    icon: "globe",
+    tag: "Presencia digital",
+    title: "Landing Pages y Presencia Digital",
+    text: "Sitios web de alta conversión para agencias y empresas.",
+    features: [
+      "Desarrollo moderno y ultra rápido (Next.js/React)",
+      "Diseño enfocado en captación de clientes (formularios y WhatsApp)",
+      "Optimización para buscadores (SEO)",
+    ],
   },
 ];
 
@@ -32,11 +64,11 @@ export default function Solutions() {
       <Container>
         <SectionHeading
           eyebrow="Sistemas Core"
-          title="Dos cuellos de botella que resolvemos de raíz"
-          text="Unidades paradas sin control y un stock que solo cierra en Excel. Para eso armamos estos sistemas: se ajustan a cómo ya trabaja tu empresa y reemplazan las planillas sueltas."
+          title="Soluciones implementadas: Casos de éxito reales"
+          text="Sistemas desarrollados a medida que ya están optimizando la operativa diaria de empresas y profesionales. Nos adaptamos a tu lógica de trabajo."
         />
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
           {solutions.map((s) => (
             <article
               key={s.title}
@@ -62,6 +94,20 @@ export default function Solutions() {
                   </li>
                 ))}
               </ul>
+
+              {s.demo && (
+                <div className="mt-auto pt-8">
+                  <a
+                    href={s.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-2 text-sm font-semibold text-accent-600 transition hover:text-accent-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
+                  >
+                    Solicitar Demo
+                    <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  </a>
+                </div>
+              )}
             </article>
           ))}
         </div>
